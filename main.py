@@ -2,6 +2,7 @@ from initTable import *
 from sort import *
 
 # Reading CSV
+# Themes are currently hardcoded...will have update 'theme' table later
 student_cols = ['firstname','lastname','grade','school','email','Is IB?','Caring for the Environment Rank', 
                 'Online Tutoring Rank','Caring for Seniors Rank','Anti-Racism Rank','Youth Engagment Rank', 
                 'Media and Awareness Rank','Is Team Lead?']
@@ -14,6 +15,7 @@ theme_rankings = student_table[['Caring for the Environment Rank','Online Tutori
                                 'Anti-Racism Rank','Youth Engagment Rank','Media and Awareness Rank']]
 isLead = student_table[['Is Team Lead?']]
 
+# Make this into future update
 numThemes = 6
 minTeamSize = 4
 maxTeamSize = 7
